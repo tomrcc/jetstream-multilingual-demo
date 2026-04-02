@@ -1,0 +1,32 @@
+{
+  "index:hero-heading": {
+    "original": "  Introducing<br><span class=\"highlight-text\">Jetstream</span>  ",
+    "value": "  Introducing<br><span class=\"highlight-text\">Jetstream</span>  ",
+    "_base_original": "  Introducing<br><span class=\"highlight-text\">Jetstream</span>  "
+  },
+  "index:hero-text": {
+    "original": "  <p>A new Astro template by CloudCannon, built with our <a href=\"https://lemon-pear.cloudvent.net/\">Astro Component Starter</a> for top performance, true visual editing, and an ideal developer experience.</p>\n  ",
+    "value": "  <p>A new Astro template by CloudCannon, built with our <a href=\"https://lemon-pear.cloudvent.net/\">Astro Component Starter</a> for top performance, true visual editing, and an ideal developer experience.</p>\n  ",
+    "_base_original": "  <p>A new Astro template by CloudCannon, built with our <a href=\"https://lemon-pear.cloudvent.net/\">Astro Component Starter</a> for top performance, true visual editing, and an ideal developer experience.</p>\n  "
+  },
+  "pricing:hero-heading": {
+    "original": "  Pricing designed<br>by <span class=\"highlight-text\">engineers</span><br>who know value  ",
+    "value": "  Pricing designed<br>by <span class=\"highlight-text\">engineers</span><br>who know value  ",
+    "_base_original": "  Pricing designed<br>by <span class=\"highlight-text\">engineers</span><br>who know value  "
+  },
+  "pricing:hero-text": {
+    "original": "  <p>We’ve eliminated the confusion typically associated with infrastructure pricing <br>through a strategy we call \"being straightforward about what things cost.\"</p>\n  ",
+    "value": "  <p>We’ve eliminated the confusion typically associated with infrastructure pricing <br>through a strategy we call \"being straightforward about what things cost.\"</p>\n  ",
+    "_base_original": "  <p>We’ve eliminated the confusion typically associated with infrastructure pricing <br>through a strategy we call \"being straightforward about what things cost.\"</p>\n  "
+  },
+  "search:hero-heading": {
+    "original": "  How can we help?  ",
+    "value": "  How can we help?  ",
+    "_base_original": "  How can we help?  "
+  },
+  "search:hero-text": {
+    "original": "  <p>We've indexed every page on our website with the kind of thoroughness that borders on excessive.</p>\n  ",
+    "value": "  <p>We've indexed every page on our website with the kind of thoroughness that borders on excessive.</p>\n  ",
+    "_base_original": "  <p>We've indexed every page on our website with the kind of thoroughness that borders on excessive.</p>\n  "
+  }
+}
