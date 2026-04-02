@@ -12,13 +12,19 @@ const {
   class: className,
   editable = false,
   "data-prop": customDataProp,
+  "data-rosey": roseyId,
   _component,
   ...htmlAttributes
 } = Astro.props;
 
 const effectiveDataProp = customDataProp ?? (editable ? "text" : null);
 const textDataAttributes = effectiveDataProp
-  ? { "data-editable": "text", "data-type": "text", "data-prop": effectiveDataProp }
+  ? {
+      "data-editable": "text",
+      "data-type": "text",
+      "data-prop": effectiveDataProp,
+      "data-rosey": roseyId,
+    }
   : {};
 
 const md = MarkdownIt({ html: true });
@@ -35,8 +41,7 @@ if (!_component && !hasText && !hasSlotContent) return;
 
 <Tag
   class:list={["heading", className]}
-  {...htmlAttributes}
->
+  {...htmlAttributes}>
   <span class:list={["heading-inner", size && `size-${size}`, `align-${alignX}`]}>
     {
       iconPosition == "before" && (
@@ -51,8 +56,7 @@ if (!_component && !hasText && !hasSlotContent) return;
     }
     <span
       class="heading-text"
-      {...textDataAttributes}
-    >
+      {...textDataAttributes}>
       <slot>
         {text && <Fragment set:html={MarkdownText} />}
       </slot>

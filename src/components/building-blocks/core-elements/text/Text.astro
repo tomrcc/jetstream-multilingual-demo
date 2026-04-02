@@ -9,6 +9,7 @@ const {
   class: className,
   editable = false,
   "data-prop": customDataProp,
+  "data-rosey": roseyId,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -17,7 +18,7 @@ const markdownContent = text ? md.render(text) : "";
 
 const effectiveDataProp = customDataProp ?? (editable ? "text" : null);
 const textDataAttributes = effectiveDataProp
-  ? { "data-editable": "text", "data-prop": effectiveDataProp }
+  ? { "data-editable": "text", "data-prop": effectiveDataProp, "data-rosey": roseyId }
   : {};
 
 const hasText = text?.trim().length > 0;
@@ -28,12 +29,10 @@ if (!_component && !hasText && !hasSlotContent) return;
 
 <div
   class:list={["text", className]}
-  {...htmlAttributes}
->
+  {...htmlAttributes}>
   <div
     class:list={["text-inner", `align-${alignX}`]}
-    {...textDataAttributes}
-  >
+    {...textDataAttributes}>
     <slot>
       {text && <Fragment set:html={markdownContent} />}
     </slot>
