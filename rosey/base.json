@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "keys": {
+    "index:hero-heading": {
+      "original": " <span class=\"heading-inner size-4xl align-center\">  <span class=\"heading-text\" data-editable=\"text\" data-prop=\"heading\" data-type=\"text\">  Introducing<br><span class=\"highlight-text\">Jetstream</span>  </span>  </span> ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:hero-text": {
+      "original": " <div class=\"text-inner align-center\" data-astro-cid-r4icev6a=\"\" data-editable=\"text\" data-prop=\"subtext\">  <p>A new Astro template by CloudCannon, built with our <a href=\"https://lemon-pear.cloudvent.net/\">Astro Component Starter</a> for top performance, true visual editing, and an ideal developer experience.</p>\n  </div> ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "pricing:hero-heading": {
+      "original": " <span class=\"heading-inner size-2xl align-center\">  <span class=\"heading-text\" data-editable=\"text\" data-prop=\"heading\" data-type=\"text\">  Pricing designed<br>by <span class=\"highlight-text\">engineers</span><br>who know value  </span>  </span> ",
+      "value": null,
+      "pages": {
+        "pricing/index.html": 1
+      },
+      "total": 1
+    },
+    "pricing:hero-text": {
+      "original": " <div class=\"text-inner align-center\" data-astro-cid-r4icev6a=\"\" data-editable=\"text\" data-prop=\"subtext\">  <p>We’ve eliminated the confusion typically associated with infrastructure pricing <br>through a strategy we call \"being straightforward about what things cost.\"</p>\n  </div> ",
+      "value": null,
+      "pages": {
+        "pricing/index.html": 1
+      },
+      "total": 1
+    },
+    "search:hero-heading": {
+      "original": " <span class=\"heading-inner size-2xl align-center\">  <span class=\"heading-text\" data-editable=\"text\" data-prop=\"heading\" data-type=\"text\">  How can we help?  </span>  </span> ",
+      "value": null,
+      "pages": {
+        "search/index.html": 1
+      },
+      "total": 1
+    },
+    "search:hero-text": {
+      "original": " <div class=\"text-inner align-center\" data-astro-cid-r4icev6a=\"\" data-editable=\"text\" data-prop=\"subtext\">  <p>We've indexed every page on our website with the kind of thoroughness that borders on excessive.</p>\n  </div> ",
+      "value": null,
+      "pages": {
+        "search/index.html": 1
+      },
+      "total": 1
+    }
+  }
+}
