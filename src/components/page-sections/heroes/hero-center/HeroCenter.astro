@@ -49,8 +49,7 @@ const snakePath =
   backgroundColor={backgroundColor}
   verticalOffset={verticalOffset}
   contentClass=`section-height-${sectionHeight}`
-  {...htmlAttributes}
->
+  {...htmlAttributes}>
   <CustomSection
     class:list={["hero-center-content", className]}
     maxContentWidth={maxContentWidth}
@@ -60,14 +59,12 @@ const snakePath =
     backgroundColor={backgroundColor}
     contentBackground={contentBackground}
     verticalOffset={verticalOffset}
-    rounded={rounded}
-  >
+    rounded={rounded}>
     <Icon {...eyebrowIcon} />
     <SimpleText
       alignX="center"
       class="eyebrow"
-      data-prop="eyebrowText"
-    >
+      data-prop="eyebrowText">
       {eyebrowText}
     </SimpleText>
     <Heading
@@ -76,12 +73,14 @@ const snakePath =
       alignX="center"
       text={heading}
       data-prop="heading"
+      data-rosey="hero-heading"
     />
     <Text
       alignX="center"
       class="subtext"
       data-prop="subtext"
       text={subtext}
+      data-rosey="hero-text"
     />
     <ButtonGroup
       class="buttons"
@@ -101,8 +100,7 @@ const snakePath =
             width="100%"
             viewBox="0 0 1728 753"
             preserveAspectRatio="none"
-            fill="none"
-          >
+            fill="none">
             <defs>
               <linearGradient id="gradient">
                 <stop
@@ -123,8 +121,7 @@ const snakePath =
               </linearGradient>
               <mask
                 id="gradient-mask"
-                mask-type="alpha"
-              >
+                mask-type="alpha">
                 <rect
                   class="mask-rect"
                   x="0"
@@ -148,8 +145,7 @@ const snakePath =
             width="100%"
             viewBox="0 0 1728 753"
             preserveAspectRatio="none"
-            fill="none"
-          >
+            fill="none">
             <path
               d={snakePath}
               stroke="var(--color-bg-brand)"
@@ -178,8 +174,7 @@ const snakePath =
             height="4"
             viewBox="0 0 100 4"
             preserveAspectRatio="none"
-            fill="none"
-          >
+            fill="none">
             <path
               d="M0 2H100"
               stroke="var(--color-bg-brand)"
@@ -193,8 +188,7 @@ const snakePath =
             height="4"
             viewBox="0 0 100 4"
             preserveAspectRatio="none"
-            fill="none"
-          >
+            fill="none">
             <defs>
               <linearGradient id="gradient-mobile">
                 <stop
@@ -216,8 +210,7 @@ const snakePath =
               <mask
                 id="gradient-mask-mobile"
                 maskUnits="userSpaceOnUse"
-                mask-type="alpha"
-              >
+                mask-type="alpha">
                 <rect
                   class="mask-rect"
                   x="0"
@@ -264,8 +257,7 @@ const snakePath =
         paddingVertical=""
         colorScheme={colorScheme}
         backgroundColor={backgroundColor}
-        contentBackground={false}
-      >
+        contentBackground={false}>
         <Image
           {...image}
           editable={true}

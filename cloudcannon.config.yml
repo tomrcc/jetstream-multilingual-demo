@@ -291,6 +291,26 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  locales:
+    path: rosey/locales
+    name: Locales
+    icon: translate
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    _inputs:
+      value:
+        type: html
+        label: Translation
+        cascade: true
+      original:
+        hidden: true
+        cascade: true
+      _base_original:
+        disabled: true
+        hidden: false
+        label: Original Text
+        cascade: true
 _inputs:
   pageSections:
     comment: The main sections of the page.
@@ -1048,3 +1068,6 @@ _structures_from_glob:
   - /.cloudcannon/structures/*.cloudcannon.structures.yml
 _snippets_from_glob:
   - /**/*.cloudcannon.snippets.yml
+data_config:
+  locales_fr:
+    path: rosey/locales/fr.json

@@ -50,8 +50,7 @@ const sections = frontmatter?.pageSections ?? [];
   description={description}
   keywords={keywords}
   image={image}
-  canonical={canonical}
->
+  canonical={canonical}>
   <MainNavigation {...mainNav} />
 
   <main>
@@ -61,7 +60,7 @@ const sections = frontmatter?.pageSections ?? [];
           data-editable="component"
           data-component="utils/main-component"
           data-prop-sections="pageSections"
-        >
+          data-rosey-root={Astro.params.slug ?? "index"}>
           <MainComponent sections={sections} />
         </div>
       )

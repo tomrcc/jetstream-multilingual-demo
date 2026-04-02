@@ -21,8 +21,7 @@ const pageImage = props.image || seoData.logoSource;
 <!doctype html>
 <html
   lang="en"
-  data-theme="light"
->
+  data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -114,6 +113,10 @@ const pageImage = props.image || seoData.logoSource;
     <script>
       import "@choctawnationofoklahoma/lite-vimeo";
       import "@justinribeiro/lite-youtube";
+
+      if (window?.inEditorMode) {
+        import("rosey-cloudcannon-connector");
+      }
     </script>
   </body>
 </html>
