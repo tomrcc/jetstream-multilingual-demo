@@ -1,0 +1,42 @@
+featureSlider:
+  snippet: <FeatureSlider id=[[id]] slides={[[slides]]} colorScheme=[[colorScheme]] backgroundColor=[[backgroundColor]] />
+  inline: false
+  preview:
+    text:
+      - Feature Slider
+    subtext:
+      - key: heading
+    icon: view_carousel
+  params:
+    id:
+      parser: argument
+      options:
+        model:
+          editor_key: id
+          type: string
+          optional: true
+          remove_empty: true
+    slides:
+      parser: argument
+      options:
+        model:
+          editor_key: slides
+          type: array
+    colorScheme:
+      parser: argument
+      options:
+        model:
+          editor_key: colorScheme
+          type: string
+          optional: true
+          remove_empty: true
+    backgroundColor:
+      parser: argument
+      options:
+        model:
+          editor_key: backgroundColor
+          type: string
+          optional: true
+          remove_empty: true
+  _inputs_from_glob:
+    - /src/components/page-sections/features/feature-slider/feature-slider.cloudcannon.inputs.yml

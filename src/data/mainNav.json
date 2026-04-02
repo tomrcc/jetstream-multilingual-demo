@@ -1,0 +1,64 @@
+{
+  "logoSource": "/src/assets/images/jetstream-logo.svg",
+  "logoAlt": "Logo",
+  "navData": [
+    {
+      "name": "Features",
+      "path": null,
+      "children": [
+        {
+          "name": "What we do best ↓",
+          "path": "/#services",
+          "children": []
+        },
+        {
+          "name": "Problems we've solved ↓",
+          "path": "/#solutions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "path": "/blog/",
+      "children": []
+    },
+    {
+      "name": "Pricing",
+      "path": "/pricing/",
+      "children": []
+    },
+    {
+      "name": "About",
+      "path": "/about/",
+      "children": []
+    },
+    {
+      "name": "Contact",
+      "path": "/contact/",
+      "children": []
+    }
+  ],
+  "buttonSections": [
+    {
+      "_component": "building-blocks/core-elements/button",
+      "text": "Search",
+      "hideText": true,
+      "link": "/search/",
+      "iconName": "magnifying-glass",
+      "iconPosition": "before",
+      "variant": "secondary",
+      "size": "md"
+    },
+    {
+      "_component": "building-blocks/core-elements/button",
+      "text": "Get started",
+      "hideText": false,
+      "link": "https://cloudcannon.com/templates/jetstream/",
+      "iconName": "arrow-right",
+      "iconPosition": "after",
+      "variant": "primary",
+      "size": "md"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+list:
+  id_key: _component
+  style: select
+  values_from_glob:
+    - /src/components/building-blocks/core-elements/list/list.cloudcannon.structure-value.yml
