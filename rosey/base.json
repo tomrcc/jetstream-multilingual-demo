@@ -637,308 +637,382 @@
       "original": " Placeholder Copywriter, Jetstream ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:authorName": {
       "original": " Robin Poynter ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:button_text": {
       "original": " Get started ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:cell_cell-one": {
       "original": " Cell one ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
       },
-      "total": 5
+      "total": 15
     },
     "blog/sample-blog-post-with-a-range-of-snippets:cell_cell-three": {
       "original": " Cell three ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
       },
-      "total": 5
+      "total": 15
     },
     "blog/sample-blog-post-with-a-range-of-snippets:cell_cell-two": {
       "original": " Cell two ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 5
       },
-      "total": 5
+      "total": 15
     },
     "blog/sample-blog-post-with-a-range-of-snippets:description": {
       "original": "  <p>Feature description placeholder text that will be replaced with actual content. This placeholder text is slightly longer, because this card is set to take up two rows in the grid rather than one.</p>\n  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 6
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 6,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 6,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 6
       },
-      "total": 6
+      "total": 18
     },
     "blog/sample-blog-post-with-a-range-of-snippets:eyebrow": {
       "original": " Optional eyebrow text displayed above the title ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 4
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 4,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 4,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 4
       },
-      "total": 4
+      "total": 12
     },
     "blog/sample-blog-post-with-a-range-of-snippets:eyebrowText": {
       "original": " Optional label displayed above the CTA Center heading. ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
       },
-      "total": 7
+      "total": 21
     },
     "blog/sample-blog-post-with-a-range-of-snippets:header_header-one": {
       "original": " Header One ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:header_header-three": {
       "original": " Header Three ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:header_header-two": {
       "original": " Header Two ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:heading": {
       "original": "  <p>Main heading text for the CTA Center section.</p>  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
       },
-      "total": 7
+      "total": 21
     },
     "blog/sample-blog-post-with-a-range-of-snippets:label": {
       "original": "My input",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 8
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 8,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 8,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 8
       },
-      "total": 8
+      "total": 24
     },
     "blog/sample-blog-post-with-a-range-of-snippets:option_option-1": {
       "original": " Option 1  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:option_option-2": {
       "original": " Option 2  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:option_option-3": {
       "original": " Option 3  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:placeholder": {
       "original": "name@example.com",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 4
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 4,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 4,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 4
       },
-      "total": 4
+      "total": 12
     },
     "blog/sample-blog-post-with-a-range-of-snippets:price_prefix": {
       "original": " $ ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:price_suffix": {
       "original": " /mo ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:section_section-one": {
       "original": " Section One ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:section_section-three": {
       "original": " Section Three ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:section_section-two": {
       "original": " Section Two ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "blog/sample-blog-post-with-a-range-of-snippets:subtext": {
       "original": "  <p>Optional subtext displayed beneath the CTA Center heading.</p>\n  ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 7
       },
-      "total": 7
+      "total": 21
     },
     "blog/sample-blog-post-with-a-range-of-snippets:text": {
       "original": " Button text with optional icon ",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 10
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 10,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 10,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 10
       },
-      "total": 10
+      "total": 30
     },
     "blog/sample-blog-post-with-a-range-of-snippets:title": {
       "original": "Question text 1",
       "value": null,
       "pages": {
-        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 10
+        "blog/sample-blog-post-with-a-range-of-snippets/index.html": 10,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 10,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 10
       },
-      "total": 10
+      "total": 30
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:card_heading": {
       "original": "  <h1><strong>Why we rebuilt our DNS resolver from scratch (</strong><span class=\"highlight-text\"><strong>again</strong></span><strong>)</strong> </h1>  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:card_subtext": {
       "original": "  Sometimes good enough isn't good enough, especially when our engineers have strong opinions about query optimization.  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:heading": {
       "original": "  The engineering journal  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:subtext": {
       "original": "  <p>Insights, updates, and occasional technical deep-dives from the team that keeps the internet running.</p>\n  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 5,
-        "blog/index.html": 5
+        "blog/index.html": 5,
+        "de/blog/index.html": 5,
+        "fr/blog/index.html": 5
       },
-      "total": 10
+      "total": 20
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:suffix": {
       "original": " ms ",
       "value": null,
       "pages": {
         "blog/2/index.html": 3,
-        "blog/index.html": 3
+        "blog/index.html": 3,
+        "de/blog/index.html": 3,
+        "fr/blog/index.html": 3
       },
-      "total": 6
+      "total": 12
     },
     "blog:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:text": {
       "original": " Learn why we did it ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:7db52143-7dee-4ca3-9015-4531e5614fc9:eyebrowText": {
       "original": "  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:7db52143-7dee-4ca3-9015-4531e5614fc9:heading": {
       "original": "  Let's build your next tech breakthough together  ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:7db52143-7dee-4ca3-9015-4531e5614fc9:text": {
       "original": " Or talk to us about fiber optics instead ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:page_description": {
       "original": "Read our latest articles and insights on web development, design, and technology.",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "blog:page_title": {
       "original": "Blog | Jetstream Astro Template for CloudCannon",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
-        "blog/index.html": 1
+        "blog/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 2
+      "total": 4
     },
     "contact:91088337-2ba5-4f01-b226-49fcbdc83792:4e431881-7f7f-476b-9324-62be7c2adce8:label": {
       "original": "Name",
@@ -1045,11 +1119,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "footer:blog": {
       "original": " Blog ",
@@ -1084,11 +1170,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "footer:contact": {
       "original": " Contact ",
@@ -1123,11 +1221,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "footer:home": {
       "original": " Home ",
@@ -1162,11 +1272,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "footer:legal": {
       "original": "  <p>© 2026 All rights reserved.</p>\n  ",
@@ -1201,11 +1323,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "footer:pricing": {
       "original": " Pricing ",
@@ -1240,11 +1374,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "index:42c4dfc8-8062-4821-b718-00f18eda1f3f:0ffab0e6-cf9c-40b6-a570-072c5008692b:button_text": {
       "original": " Get started ",
@@ -1711,11 +1857,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:blog": {
       "original": " Blog ",
@@ -1750,11 +1908,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:contact": {
       "original": " Contact ",
@@ -1789,11 +1959,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:features": {
       "original": "Features",
@@ -1828,11 +2010,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:features:problems-we-ve-solved": {
       "original": " Problems we've solved ↓ ",
@@ -1867,11 +2061,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:features:what-we-do-best": {
       "original": " What we do best ↓ ",
@@ -1906,11 +2112,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:get-started": {
       "original": " Get started ",
@@ -1945,11 +2163,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "nav:pricing": {
       "original": " Pricing ",
@@ -1984,11 +2214,23 @@
         "component-docs/component-builder/index.html": 2,
         "component-docs/index.html": 2,
         "contact/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "de/blog/tag/Example/index.html": 2,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 2,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 2,
+        "fr/blog/tag/Example/index.html": 2,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 2,
         "index.html": 2,
         "pricing/index.html": 2,
         "search/index.html": 2
       },
-      "total": 64
+      "total": 88
     },
     "nav:search": {
       "original": " Search ",
@@ -2023,11 +2265,23 @@
         "component-docs/component-builder/index.html": 1,
         "component-docs/index.html": 1,
         "contact/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
         "index.html": 1,
         "pricing/index.html": 1,
         "search/index.html": 1
       },
-      "total": 32
+      "total": 44
     },
     "pagination:aria_label": {
       "original": "Pagination Navigation",
@@ -2070,9 +2324,15 @@
         "blog/what-happens-when-you-ping-our-network-10-billion-times/index.html": 1,
         "blog/why-our-engineers-get-excited-about-fiber-optic-cables/index.html": 1,
         "blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
-        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1
+        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1
       },
-      "total": 13
+      "total": 19
     },
     "post:latest_news": {
       "original": " Latest News ",
@@ -2090,9 +2350,15 @@
         "blog/what-happens-when-you-ping-our-network-10-billion-times/index.html": 1,
         "blog/why-our-engineers-get-excited-about-fiber-optic-cables/index.html": 1,
         "blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
-        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1
+        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1
       },
-      "total": 13
+      "total": 19
     },
     "post:share": {
       "original": " \nShare this article:\n ",
@@ -2110,9 +2376,15 @@
         "blog/what-happens-when-you-ping-our-network-10-billion-times/index.html": 1,
         "blog/why-our-engineers-get-excited-about-fiber-optic-cables/index.html": 1,
         "blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
-        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1
+        "blog/your-traffic-patterns-are-more-predictable-than-you-think/index.html": 1,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1
       },
-      "total": 13
+      "total": 19
     },
     "pricing:7a77bb8e-fe69-401a-86e4-2216b8322d07:9c3edb61-c4cf-47b8-8107-eae212ca56a5:label": {
       "original": "Email",
@@ -2838,9 +3110,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tag_page_titles:caching": {
       "original": "Blog - Caching | Jetstream Astro Template for CloudCannon",
@@ -2870,17 +3146,21 @@
       "original": "Blog - Example | Jetstream Astro Template for CloudCannon",
       "value": null,
       "pages": {
-        "blog/tag/Example/index.html": 1
+        "blog/tag/Example/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "tag_page_titles:performance": {
       "original": "Blog - Performance | Jetstream Astro Template for CloudCannon",
       "value": null,
       "pages": {
-        "blog/tag/Performance/index.html": 1
+        "blog/tag/Performance/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 1
+      "total": 3
     },
     "tag_page_titles:photons": {
       "original": "Blog - Photons | Jetstream Astro Template for CloudCannon",
@@ -2926,9 +3206,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:card_subtext": {
       "original": "  Sometimes good enough isn't good enough, especially when our engineers have strong opinions about query optimization.  ",
@@ -2942,9 +3226,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:heading": {
       "original": "  The engineering journal  ",
@@ -2958,9 +3246,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:subtext": {
       "original": "  <p>Insights, updates, and occasional technical deep-dives from the team that keeps the internet running.</p>\n  ",
@@ -2974,9 +3266,13 @@
         "blog/tag/Photons/index.html": 5,
         "blog/tag/Prediction/index.html": 5,
         "blog/tag/Security/index.html": 5,
-        "blog/tag/Uptime/index.html": 5
+        "blog/tag/Uptime/index.html": 5,
+        "de/blog/tag/Example/index.html": 5,
+        "de/blog/tag/Performance/index.html": 5,
+        "fr/blog/tag/Example/index.html": 5,
+        "fr/blog/tag/Performance/index.html": 5
       },
-      "total": 45
+      "total": 65
     },
     "tags:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:suffix": {
       "original": " ms ",
@@ -2990,9 +3286,13 @@
         "blog/tag/Photons/index.html": 3,
         "blog/tag/Prediction/index.html": 3,
         "blog/tag/Security/index.html": 3,
-        "blog/tag/Uptime/index.html": 3
+        "blog/tag/Uptime/index.html": 3,
+        "de/blog/tag/Example/index.html": 3,
+        "de/blog/tag/Performance/index.html": 3,
+        "fr/blog/tag/Example/index.html": 3,
+        "fr/blog/tag/Performance/index.html": 3
       },
-      "total": 27
+      "total": 39
     },
     "tags:2f9ee893-ba32-4a0a-b063-4f7dd07a38d7:text": {
       "original": " Learn why we did it ",
@@ -3006,9 +3306,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:7db52143-7dee-4ca3-9015-4531e5614fc9:eyebrowText": {
       "original": "  ",
@@ -3022,9 +3326,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:7db52143-7dee-4ca3-9015-4531e5614fc9:heading": {
       "original": "  Let's build your next tech breakthough together  ",
@@ -3038,9 +3346,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:7db52143-7dee-4ca3-9015-4531e5614fc9:text": {
       "original": " Or talk to us about fiber optics instead ",
@@ -3054,9 +3366,13 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 9
+      "total": 13
     },
     "tags:all": {
       "original": " All ",
@@ -3072,9 +3388,15 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 11
+      "total": 17
     },
     "tags:caching": {
       "original": " Caching ",
@@ -3149,12 +3471,22 @@
         "blog/tag/Photons/index.html": 1,
         "blog/tag/Prediction/index.html": 1,
         "blog/tag/Security/index.html": 1,
-        "blog/tag/Uptime/index.html": 1
+        "blog/tag/Uptime/index.html": 1,
+        "de/blog/index.html": 3,
+        "de/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "de/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "de/blog/tag/Example/index.html": 3,
+        "de/blog/tag/Performance/index.html": 1,
+        "fr/blog/index.html": 3,
+        "fr/blog/sample-blog-post-with-a-range-of-snippets/index.html": 1,
+        "fr/blog/sample-blog-post-with-all-markdown-styling-options/index.html": 1,
+        "fr/blog/tag/Example/index.html": 3,
+        "fr/blog/tag/Performance/index.html": 1
       },
-      "total": 17
+      "total": 35
     },
     "tags:performance": {
-      "original": "Performance",
+      "original": " Performance ",
       "value": null,
       "pages": {
         "blog/2/index.html": 1,
@@ -3171,9 +3503,17 @@
         "blog/the-great-ddos-attack-of-last-tuesday-a-postmortem/index.html": 1,
         "blog/we-added-47-edge-nodes-last-month-and-nobody-noticed/index.html": 1,
         "blog/what-happens-when-you-ping-our-network-10-billion-times/index.html": 1,
-        "blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1
+        "blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "de/blog/index.html": 2,
+        "de/blog/tag/Example/index.html": 1,
+        "de/blog/tag/Performance/index.html": 2,
+        "de/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1,
+        "fr/blog/index.html": 2,
+        "fr/blog/tag/Example/index.html": 1,
+        "fr/blog/tag/Performance/index.html": 2,
+        "fr/blog/why-we-rebuilt-our-dns-resolver-from-scratch-again/index.html": 1
       },
-      "total": 23
+      "total": 35
     },
     "tags:photons": {
       "original": " Photons ",
