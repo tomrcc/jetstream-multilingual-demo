@@ -1,0 +1,132 @@
+/* Shared by /blog/[...slug].astro and its locale twin /[locale]/blog/[...slug].astro.
+   Imported per-route rather than from style.css so it isn't inlined into every page. */
+@layer page-sections {
+  .hero-feature {
+    .breadcrumb {
+      color: var(--color-text-brand);
+      font-weight: var(--font-weight-bold);
+    }
+    .blog-link {
+      color: var(--color-text-brand);
+      text-decoration: none;
+    }
+    .tag {
+      color: var(--color-text-brand);
+      text-decoration: none;
+    }
+
+    .description {
+      font-weight: var(--font-weight-bold);
+    }
+
+    .author {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-bold);
+    }
+
+    .hero-image {
+      margin-top: var(--spacing-xl);
+      max-width: min(100%, var(--content-width-xl));
+      position: relative;
+      width: fit-content;
+
+      &::before {
+        --angle: 0deg;
+        animation: rotate-angle 2s linear infinite;
+        background: conic-gradient(
+          from var(--angle),
+          var(--color-bg-brand),
+          var(--color-bg-inverse),
+          var(--color-bg-brand)
+        );
+        border-radius: calc(var(--radius-lg) + 4px);
+        content: "";
+        inset: 0;
+        margin: -4px;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .image {
+        margin: 0;
+
+        .image-inner {
+          max-height: 450px;
+          overflow: hidden;
+        }
+
+        img {
+          max-height: 450px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .share-section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-xl) 0;
+
+    .share-section-text {
+      flex: 0 0 auto;
+    }
+
+    .button-group {
+      flex: 0 1 50%;
+    }
+  }
+
+  .post-layout {
+    position: relative;
+    > .pane.second {
+      margin-bottom: var(--spacing-xl);
+      position: sticky;
+      top: calc(var(--spacing-nav-height) + var(--spacing-md));
+    }
+  }
+
+  .post-container.custom-section > .outer-content > .content {
+    padding-bottom: 0 !important;
+  }
+
+  .post {
+    display: grid;
+    margin-inline: auto;
+    margin-top: var(--spacing-xl);
+  }
+
+  .post > h1,
+  .post > h2,
+  .post > h3,
+  .post > h4,
+  .post > h5,
+  .post > h6 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .post > h1:first-child,
+  .post > h2:first-child,
+  .post > h3:first-child,
+  .post > h4:first-child,
+  .post > h5:first-child,
+  .post > h6:first-child {
+    margin-top: 0;
+  }
+
+  .post > .astro-code {
+    margin-block: var(--spacing-xl);
+  }
+
+  .post-image {
+    margin-top: var(--spacing-xl);
+  }
+  .sidebar .card .image .image-inner {
+    max-height: 150px;
+    width: 100%;
+  }
+}

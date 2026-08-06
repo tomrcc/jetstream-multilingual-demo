@@ -1,4 +1,10 @@
 ---
+import {
+  blogCollectionFor,
+  dateLocaleFor,
+  localeCodes,
+  type Locale,
+} from "@component-utils/locales";
 import { mdxComponents } from "@component-utils/mdxComponents";
 import { slugifyLabel } from "@component-utils/slugify";
 import Button from "@core-elements/button/Button.astro";
@@ -11,54 +17,70 @@ import CustomSection from "@page-sections/builders/custom-section/CustomSection.
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
 import Card from "@wrappers/card/Card.astro";
 import Split from "@wrappers/split/Split.astro";
-import { getCollection, render, type CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import "@styles/blog-post.css";
 
+// The locale twin of /blog/[...slug].astro. Post bodies are translated by editing the
+// locale's own content file, so nothing here is Rosey-keyed except the shared chrome —
+// which is keyed under the *English* page's root so both pages share one translation.
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const paths = [];
 
-  return posts.map((post: CollectionEntry<"blog">) => {
-    const slug = post.id?.replace(/\.mdx?$/, "") || post.slug;
+  for (const locale of localeCodes) {
+    const posts = await getCollection(blogCollectionFor(locale));
 
-    return {
-      params: { slug },
-      props: { post },
-    };
-  });
+    for (const post of posts) {
+      const slug = post.id?.replace(/\.mdx?$/, "") || post.slug;
+
+      paths.push({
+        // locale has to be in props as well as params — route params don't reach
+        // Astro.props, and every link below would render /undefined/.
+        params: { locale, slug },
+        props: { post, locale },
+      });
+    }
+  }
+
+  return paths;
 }
 
 interface Props {
-  post: CollectionEntry<"blog">;
+  post: any;
+  locale: Locale;
 }
 
-const { post } = Astro.props;
+const { post, locale } = Astro.props as Props;
+const slug = post.id?.replace(/\.mdx?$/, "") || post.slug;
 const { Content } = await render(post);
-const date = post.data.date.toLocaleDateString("en-US", {
+const date = post.data.date.toLocaleDateString(dateLocaleFor(locale), {
   year: "numeric",
   month: "long",
   day: "numeric",
 });
 
-// Get three most recent posts excluding the current one
-const allPosts = await getCollection("blog");
+// Recent posts come from this locale's collection, so the sidebar never links to a
+// post that has no translation in this language.
+const allPosts = await getCollection(blogCollectionFor(locale));
 const recentPosts = allPosts
   .filter((p) => p.id !== post.id)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 
-// Get author page from uuid
+// Authors are shared across locales — team entries hold identity values, not copy.
 const team = await getCollection("team");
 const author = team.find((m: any) => m.data.uuid === post.data.author);
 ---
 
-<!-- No roseySeo: the head comes from post frontmatter, which stays in the default
-     language. hideLocaleSwitcher hides the connector's switcher here, because the post
-     body carries no Rosey keys and switching locale would offer nothing to translate. -->
+<!-- roseyRoot is the English-equivalent path, not this page's URL. Deriving it from
+     /fr/blog/x/ would mint a duplicate `fr/blog/x:…` key set instead of sharing the
+     English page's. hideLocaleSwitcher for the same reason as the English route: the
+     body is translated in the content file, so switching locale offers nothing. -->
 <Page
   title={post.data.title}
   description={post.data.description}
   image={post.data.image}
+  roseyRoot={`blog/${slug}`}
   hideLocaleSwitcher
 >
   <CustomSection
@@ -79,10 +101,7 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
       gap="lg"
     >
       <Fragment slot="first">
-        {
-          /* Post frontmatter is not translated — it belongs to the post file, not to
-            Rosey — so these opt out of the derived key. */
-        }
+        {/* Already in this locale's language — it comes from the locale content file. */}
         <Heading
           level="h1"
           size="2xl"
@@ -93,21 +112,17 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
         >
           {post.data.title}
         </Heading>
-        {
-          /* data-rosey-root escapes the per-post namespace, so "Blog" is one key across
-            every post rather than one each. The tag link below sets its own root. */
-        }
         <p
           class="breadcrumb"
           data-rosey-root="post"
         >
           <a
-            href="/blog/"
+            href={`/${locale}/blog/`}
             class="blog-link"
             data-rosey="breadcrumb_blog"
             >Blog</a
           > / <a
-            href={`/blog/tag/${post.data.tag}`}
+            href={`/${locale}/blog/tag/${post.data.tag}`}
             class="tag"
             data-rosey-root="tags"
             ><span
@@ -157,13 +172,11 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
             data-editable="array"
             data-prop="counters"
           >
-            {post.data?.counters?.map((counter: any, index: number) => (
+            {post.data?.counters?.map((counter: any) => (
               <div
                 class="counter-container"
                 data-editable="array-item"
               >
-                {/* Counter values and their labels come from post frontmatter, which is
-                    not translated, so they opt out of the derived keys. */}
                 <editable-component
                   data-prop="counter"
                   data-component="building-blocks/core-elements/counter"
@@ -268,16 +281,15 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
 
         <div class="share-section">
           {
-            /* data-rosey-root escapes the per-post namespace so this is one key for every
-              post rather than one per post. */
+            /* No data-editable="source" twin of the English route's: there is one English
+              string for this label and it lives in /blog/[...slug].astro. Two source
+              editors for one string would edit two different files. The translation is
+              reachable through the shared Rosey key instead. */
           }
           <SimpleText
             size="md"
             class="share-section-text"
             style="font-weight: var(--font-weight-bold); margin: 0px;"
-            data-editable="source"
-            data-path="/src/pages/blog/[...slug].astro"
-            data-key="share-section-heading"
             data-rosey-root="post"
             data-rosey="share"
           >
@@ -313,26 +325,23 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
           size="sm"
           class="sidebar-title"
           style="border-bottom: 2px solid var(--color-border-subtle); color: var(--color-text-brand); font-weight: var(--font-weight-bold); margin-top: var(--spacing-md);"
-          data-editable="source"
-          data-path="/src/pages/blog/[...slug].astro"
-          data-key="sidebar-heading"
           data-rosey-root="post"
           data-rosey="latest_news"
           >Latest News</SimpleText
         >
         {
           recentPosts.map((recentPost) => {
-            const slug = recentPost.id?.replace(/\.mdx?$/, "") || recentPost.slug;
-            const postDate = recentPost.data.date.toLocaleDateString("en-US", {
+            const recentSlug = recentPost.id?.replace(/\.mdx?$/, "") || recentPost.slug;
+            const postDate = recentPost.data.date.toLocaleDateString(dateLocaleFor(locale), {
               year: "numeric",
               month: "long",
               day: "numeric",
             });
-            const author = team.find((m: any) => m.data.uuid === recentPost.data.author);
+            const recentAuthor = team.find((m: any) => m.data.uuid === recentPost.data.author);
 
             return (
               <Card
-                link={`/blog/${slug}`}
+                link={`/${locale}/blog/${recentSlug}`}
                 rounded={true}
                 border={false}
                 backgroundColor="accent"
@@ -368,7 +377,7 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
                   style="color: var(--color-text-muted); margin-top: 0; font-weight: var(--font-weight-bold);"
                   editable={false}
                 >
-                  By {author?.data.name || "Anonymous"} | {postDate}
+                  By {recentAuthor?.data.name || "Anonymous"} | {postDate}
                 </SimpleText>
               </Card>
             );
@@ -385,10 +394,6 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
     if (copyBtn) {
       copyBtn.addEventListener("click", () => {
         navigator.clipboard.writeText(window.location.href);
-        // Optional: Add visual feedback
-        const originalText = copyBtn.getAttribute("data-original-text") || "Copy link";
-        copyBtn.setAttribute("data-original-text", originalText);
-        // You could add a toast notification here
       });
     }
   });
