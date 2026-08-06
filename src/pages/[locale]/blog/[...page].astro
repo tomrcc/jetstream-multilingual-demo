@@ -15,8 +15,7 @@ import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
 import Card from "@wrappers/card/Card.astro";
 import { getCollection } from "astro:content";
 
-// Built natively rather than left to Rosey: a Rosey copy of /blog/ would list the
-// English posts under a /fr/ URL. Only posts that exist in blog_<locale> appear here.
+// Built natively — a Rosey copy of /blog/ would list the English posts under /fr/.
 export async function getStaticPaths({ paginate }) {
   const paths = [];
 
@@ -25,15 +24,13 @@ export async function getStaticPaths({ paginate }) {
       (a: any, b: any) => b.data.date.getTime() - a.data.date.getTime()
     );
 
-    // Derived from this locale's posts, so the chip row never offers a tag with
-    // nothing behind it in this language.
+    // This locale's posts only, so no chip offers a tag with nothing behind it.
     const allTags = Array.from(
       new Set(blogPosts.map((post: any) => post.data.tag).filter(Boolean))
     ).sort();
 
     paths.push(
-      // params feeds the URL, props feeds the template — paginate() needs both, or
-      // Astro.props.locale is undefined and the pagination links read /undefined/blog/2/.
+      // paginate() needs both — without props, pagination links read /undefined/blog/2/.
       ...paginate(blogPosts, {
         pageSize: 8,
         params: { locale },
@@ -68,8 +65,8 @@ const ctaSections = blogPage?.data?.ctaSections ?? [];
 const team = await getCollection("team");
 ---
 
-<!-- roseyRoot="blog" — the English listing's root, not this page's path. The heading,
-     chips and hero are one set of keys shared by /blog/, /blog/2/ and every locale. -->
+<!-- roseyRoot="blog" — the English listing's root, so /blog/, /blog/2/ and every locale
+     share one set of keys rather than minting their own. -->
 <Page
   title={pageTitle}
   description={pageDescription}
@@ -97,8 +94,7 @@ const team = await getCollection("team");
       page.data.length > 0 ? (
         <>
           {allTags.length > 0 && (
-            // Tag slugs stay canonical in the URL; only the labels translate, through
-            // the same "tags" root the English routes use.
+            // Slugs stay canonical in the URL; only the labels translate.
             <ButtonGroup data-rosey-root="tags">
               <Button
                 link={`/${locale}/blog#posts`}
@@ -177,8 +173,7 @@ const team = await getCollection("team");
                     >
                       {post.data.tag}
                     </SimpleText>
-                    {/* Titles and descriptions come from the locale's own post files,
-                        so they're already in this language and carry no Rosey key. */}
+                    {/* Already in this language — from the locale's post files, unkeyed. */}
                     <Heading
                       level="h3"
                       size="md"

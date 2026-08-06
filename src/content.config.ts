@@ -104,11 +104,8 @@ const blogCollection = defineCollection({
   schema: blogPostSchema,
 });
 
-// Blog posts are split by directory rather than translated through Rosey — a whole
-// article that differs per language is a content file, not a set of keys. Filenames
-// have to match their English original: the [locale] post route derives its slug from
-// the filename, so /fr/blog/<slug>/ lines up with /blog/<slug>/ and shares its Rosey
-// root. Locale collection names come from `blogCollection` in utils/locales.ts.
+// Filenames must match the English original — the [locale] route derives its slug from
+// the filename, so /fr/blog/<slug>/ shares the English page's Rosey keys.
 const blogFrCollection = defineCollection({
   loader: glob({ pattern: "**/*.mdx", base: "./src/content/blog_fr" }),
   schema: blogPostSchema,

@@ -184,16 +184,13 @@ collections_config:
     url: /fr/blog/[full_slug]/
     disable_url: false
     description: >-
-      The **French** copies of the blog posts that have been translated. Post
-      bodies here are real content files, not Rosey keys — edit them like any
-      other post.
+      The **French** blog posts. Edit these like any other post — the body is a
+      real content file, not a translation string.
 
 
-      Filenames must match the English original exactly: the URL and the shared
-      translation keys for the surrounding chrome are both derived from it. Keep
-      `tag`, `image`, `date` and `author` byte-identical to the English post too
-      — `tag` is the URL segment and the taxonomy key, and its visible label is
-      already translated through Rosey.
+      Leave the filename, `tag`, `image`, `date` and `author` as they are: the URL
+      and the tag pages are built from them, and the tag label is translated
+      separately.
     _enabled_editors:
       - content
       - visual
@@ -217,16 +214,13 @@ collections_config:
     url: /de/blog/[full_slug]/
     disable_url: false
     description: >-
-      The **German** copies of the blog posts that have been translated. Post
-      bodies here are real content files, not Rosey keys — edit them like any
-      other post.
+      The **German** blog posts. Edit these like any other post — the body is a
+      real content file, not a translation string.
 
 
-      Filenames must match the English original exactly: the URL and the shared
-      translation keys for the surrounding chrome are both derived from it. Keep
-      `tag`, `image`, `date` and `author` byte-identical to the English post too
-      — `tag` is the URL segment and the taxonomy key, and its visible label is
-      already translated through Rosey.
+      Leave the filename, `tag`, `image`, `date` and `author` as they are: the URL
+      and the tag pages are built from them, and the tag label is translated
+      separately.
     _enabled_editors:
       - content
       - visual

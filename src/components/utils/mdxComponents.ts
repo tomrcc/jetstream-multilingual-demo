@@ -1,6 +1,5 @@
-// Blog posts can use any building block or page section in their MDX without an
-// import. The key is the PascalCase filename, which is the tag name post authors
-// write — <CtaCenter /> resolves to core-elements/../CtaCenter.astro.
+// Lets MDX posts use any building block without importing it. Key is the PascalCase
+// filename, so <CtaCenter /> resolves to CtaCenter.astro.
 const modules = {
   ...import.meta.glob("../building-blocks/**/*.astro", { eager: true }),
   ...import.meta.glob("../page-sections/**/*.astro", { eager: true }),

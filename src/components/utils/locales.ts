@@ -1,11 +1,9 @@
-// The locales Rosey builds translated copies of the site for. Adding one here is
-// step 1 of 3 — it also needs `--locales` in .cloudcannon/postbuild and a
-// `data_config.locales_<code>` entry in cloudcannon.config.yml.
+// The locales Rosey builds translated copies of the site for. Adding one here also needs
+// `--locales` in .cloudcannon/postbuild, a `data_config.locales_<code>` entry and a
+// `blog_<code>` collection in cloudcannon.config.yml, and a src/content/blog_<code>/ dir.
 export const defaultLocale = "en";
 
-// blogCollection is the split-by-directory half of the model: whole articles that
-// differ per language are separate content files, not Rosey keys. Adding a locale
-// here without creating its collection breaks the [locale] blog routes at build.
+// blogCollection: whole articles are per-locale content files, not Rosey keys.
 export const locales = {
   fr: { label: "FR", blogCollection: "blog_fr", dateLocale: "fr-FR" },
   de: { label: "DE", blogCollection: "blog_de", dateLocale: "de-DE" },

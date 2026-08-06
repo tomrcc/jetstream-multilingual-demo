@@ -48,13 +48,13 @@ const {
 
     <div class="footer-content">
       <div class="content-container">
-        {/* data-prop was "", which is falsy — so this had no editable region and no
-            derived key. The year in the copyright will flag the translation stale each
-            January; splitting it out would avoid that. */}
+        {
+          /* No data-prop — a text region resolves it against the page's data, which has no
+            footerText. Edited in the Data Editor instead. */
+        }
         <Text
           class="footer-legal-text"
           text={footerText || ""}
-          data-prop="footerText"
           data-rosey-root="footer"
           data-rosey="legal"
         />

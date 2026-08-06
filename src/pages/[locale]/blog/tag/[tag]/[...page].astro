@@ -15,8 +15,7 @@ import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
 import Card from "@wrappers/card/Card.astro";
 import { getCollection } from "astro:content";
 
-// Built natively for the same reason as the locale listing: a Rosey copy of
-// /blog/tag/Caching/ would list the English posts under /fr/. The tag value is the URL
+// Built natively — a Rosey copy would list the English posts under /fr/. `tag` is the URL
 // segment as well as the grouping key, so it stays byte-identical across locales.
 export async function getStaticPaths({ paginate }) {
   const paths = [];
@@ -69,8 +68,7 @@ const ctaSections = blogPage?.data?.ctaSections ?? [];
 const team = await getCollection("team");
 ---
 
-<!-- Same roots and keys as the English tag route, so a tag page is translated once for
-     every locale rather than once per locale. -->
+<!-- Same roots and keys as the English tag route, so each tag is translated once. -->
 <Page
   title={`${pageTitle} - ${selectedTag}`}
   description={pageDescription}
