@@ -30,6 +30,7 @@ const {
   },
   rounded = false,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -49,6 +50,7 @@ const snakePath =
   backgroundColor={backgroundColor}
   verticalOffset={verticalOffset}
   contentClass=`section-height-${sectionHeight}`
+  data-rosey-ns={_uuid}
   {...htmlAttributes}>
   <CustomSection
     class:list={["hero-center-content", className]}
@@ -73,14 +75,12 @@ const snakePath =
       alignX="center"
       text={heading}
       data-prop="heading"
-      data-rosey="hero-heading"
     />
     <Text
       alignX="center"
       class="subtext"
       data-prop="subtext"
       text={subtext}
-      data-rosey="hero-text"
     />
     <ButtonGroup
       class="buttons"

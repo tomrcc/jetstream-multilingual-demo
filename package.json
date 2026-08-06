@@ -60,7 +60,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rosey": "^2.3.10",
-    "rosey-cloudcannon-connector": "github:tomrcc/rcc-v2",
+    "rosey-cloudcannon-connector": "^2.0.0",
     "sharp": "^0.34.3",
     "shiki": "^3.9.2",
     "unpic": "^4.1.3",

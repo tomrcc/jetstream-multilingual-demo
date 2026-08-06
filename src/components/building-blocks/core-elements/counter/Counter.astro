@@ -1,4 +1,6 @@
 ---
+import { resolveRosey } from "@component-utils/roseyKey";
+
 const {
   number = 0,
   prefix,
@@ -6,19 +8,37 @@ const {
   alignX = "start",
   size,
   class: className,
+  "data-rosey-prefix": roseyPrefix,
+  "data-rosey-suffix": roseySuffix,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
 
 const startNumber = Math.floor(number * 0.2);
 const duration = 500;
+
+// Only the prefix and suffix are translatable — animateCounter below rewrites
+// .number's textContent on scroll, which would clobber an injected translation.
+const prefixRoseyAttributes = resolveRosey(roseyPrefix, "prefix");
+const suffixRoseyAttributes = resolveRosey(roseySuffix, "suffix");
 ---
 
 <div
   class:list={["counter", `alignment-${alignX}`, size && `size-${size}`, className]}
+  data-rosey-ns={_uuid}
   {...htmlAttributes}
 >
-  {prefix && <span class="prefix">{prefix}</span>}
+  {
+    prefix && (
+      <span
+        class="prefix"
+        {...prefixRoseyAttributes}
+      >
+        {prefix}
+      </span>
+    )
+  }
   <span
     class="number"
     data-target={`${number}`}
@@ -27,7 +47,16 @@ const duration = 500;
     aria-live="off"
     >{number}</span
   >
-  {suffix && <span class="suffix">{suffix}</span>}
+  {
+    suffix && (
+      <span
+        class="suffix"
+        {...suffixRoseyAttributes}
+      >
+        {suffix}
+      </span>
+    )
+  }
 </div>
 
 <script>

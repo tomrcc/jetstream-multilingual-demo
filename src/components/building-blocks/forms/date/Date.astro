@@ -7,6 +7,7 @@ const {
   min,
   max,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -14,14 +15,18 @@ const {
 const fieldId = htmlAttributes.id || `date-${crypto.randomUUID()}`;
 ---
 
-<div class:list={["date", className]}>
+<div
+  class:list={["date", className]}
+  data-rosey-ns={_uuid}
+>
   {
     label && (
       <label
         for={fieldId}
         class="label"
       >
-        {label}
+        {/* Key on the span, not the <label> — the required marker is a non-text child. */}
+        <span data-rosey="label">{label}</span>
         {required && (
           <span
             class="date-required"

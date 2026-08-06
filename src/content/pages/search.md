@@ -3,6 +3,7 @@ _schema: default
 title: Search
 pageSections:
   - _component: page-sections/heroes/hero-center
+    _uuid: 275edef3-d84e-4090-9fd6-0d43a39be11d
     eyebrowIcon: {}
     eyebrowText:
     heading: How can we help?
@@ -20,9 +21,11 @@ pageSections:
     rounded: false
     eyebrow:
   - _component: page-sections/builders/custom-section
+    _uuid: 0b4759a5-d14a-4c56-bc5f-1107670c0b9c
     label: ''
     contentSections:
       - _component: building-blocks/core-elements/embed
+        _uuid: e2f6d190-fec9-424e-9711-cbcfe23f85d1
         html: |
           <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
           <script src="/pagefind/pagefind-ui.js"></script>

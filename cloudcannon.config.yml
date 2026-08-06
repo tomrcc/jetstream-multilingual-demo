@@ -312,6 +312,12 @@ collections_config:
         label: Original Text
         cascade: true
 _inputs:
+  _uuid:
+    type: text
+    hidden: true
+    instance_value: UUID
+    comment: Stable per-block ID used as the Rosey translation namespace.
+    cascade: true
   pageSections:
     comment: The main sections of the page.
     cascade: true
@@ -1069,5 +1075,9 @@ _structures_from_glob:
 _snippets_from_glob:
   - /**/*.cloudcannon.snippets.yml
 data_config:
+  # The connector reads locales through `api.dataset("locales_<code>")`, so the
+  # `locales_` prefix is required, not a convention.
   locales_fr:
     path: rosey/locales/fr.json
+  locales_de:
+    path: rosey/locales/de.json

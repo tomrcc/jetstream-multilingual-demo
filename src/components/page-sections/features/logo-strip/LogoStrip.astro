@@ -16,6 +16,7 @@ const {
   rounded = false,
   class: className,
   editable = false,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -32,6 +33,7 @@ const {
   contentBackground={contentBackground}
   verticalOffset={verticalOffset}
   id={id}
+  data-rosey-ns={_uuid}
   {...htmlAttributes}
 >
   <Heading

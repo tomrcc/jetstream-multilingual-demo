@@ -1,5 +1,6 @@
 ---
 import StructuredData from "@components/utils/StructuredData.astro";
+import { defaultLocale, localeCodes } from "@component-utils/locales";
 import seoData from "@data/seo.json";
 import "@styles/style.css";
 import { SEO } from "astro-seo";
@@ -10,17 +11,35 @@ export interface Props {
   keywords?: string[] | null;
   image?: string | null;
   canonical?: string | null;
+  roseyRoot?: string;
+  // Opt-in per page, never a default: pages whose head comes from translated content
+  // must not have head keys, since a Rosey value would override it.
+  roseySeo?: boolean;
+  // For routes serving many pages from one template, where the derived root would
+  // collapse every page onto a single key.
+  roseyTitleKey?: string;
+  roseyDescriptionKey?: string;
+  hideLocaleSwitcher?: boolean;
 }
 
 const props = Astro.props;
 const formattedTitle = seoData.titleFormat.replace("{title}", props.title);
 const pageDescription = props.description || seoData.description;
 const pageImage = props.image || seoData.logoSource;
+
+const pageRoseyRoot = props.roseyRoot ?? (Astro.url.pathname.replace(/^\/|\/$/g, "") || "index");
+const titleKey = props.roseyTitleKey ?? (props.roseySeo ? `${pageRoseyRoot}:page_title` : undefined);
+const descriptionKey =
+  props.roseyDescriptionKey ?? (props.roseySeo ? `${pageRoseyRoot}:page_description` : undefined);
+
+// Excluding every locale is how the connector is told to hide its locale switcher.
+// Astro drops the attribute when this is undefined, so other pages are untouched.
+const rccExclude = props.hideLocaleSwitcher ? localeCodes.join(",") : undefined;
 ---
 
 <!doctype html>
 <html
-  lang="en"
+  lang={defaultLocale}
   data-theme="light">
   <head>
     <meta charset="UTF-8" />
@@ -72,9 +91,23 @@ const pageImage = props.image || seoData.logoSource;
       }
     </script>
 
+    {/* astro-seo can't carry data-* attributes on the tags it renders, so where we have
+        keys we emit our own and pass undefined to suppress its versions. OG and Twitter
+        text stays in the default language. */}
+    {titleKey && <title data-rosey={titleKey}>{formattedTitle}</title>}
+    {
+      descriptionKey && (
+        <meta
+          name="description"
+          content={pageDescription}
+          data-rosey-attrs-explicit={JSON.stringify({ content: descriptionKey })}
+        />
+      )
+    }
+
     <SEO
-      title={formattedTitle}
-      description={pageDescription}
+      title={titleKey ? undefined : formattedTitle}
+      description={descriptionKey ? undefined : pageDescription}
       openGraph={{
         basic: {
           title: formattedTitle,
@@ -107,7 +140,11 @@ const pageImage = props.image || seoData.logoSource;
     <slot name="head" />
   </head>
   <body>
-    <div>
+    {/* The connector's snapshot boundary. It wraps the nav and footer as well as <main>
+        so they take part in locale switching — the default boundary is <main> alone. */}
+    <div
+      data-rcc
+      data-rcc-exclude={rccExclude}>
       <slot />
     </div>
     <script>

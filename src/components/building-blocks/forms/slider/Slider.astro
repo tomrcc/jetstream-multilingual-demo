@@ -6,6 +6,7 @@ const {
   required = false,
   value = "on",
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -13,7 +14,10 @@ const {
 const fieldId = htmlAttributes.id || `slider-${crypto.randomUUID()}`;
 ---
 
-<div class:list={["slider", className]}>
+<div
+  class:list={["slider", className]}
+  data-rosey-ns={_uuid}
+>
   <label
     class="slider-container"
     for={fieldId}
@@ -35,7 +39,8 @@ const fieldId = htmlAttributes.id || `slider-${crypto.randomUUID()}`;
     {
       label && (
         <span class="slider-label">
-          {label}
+          {/* Key on the inner span — the required marker is a non-text child. */}
+          <span data-rosey="label">{label}</span>
           {required && (
             <span
               class="slider-required"

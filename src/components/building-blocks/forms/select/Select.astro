@@ -1,4 +1,5 @@
 ---
+import { slugifyLabel } from "@component-utils/slugify";
 import SelectOption from "./SelectOption.astro";
 
 const {
@@ -9,6 +10,7 @@ const {
   required = false,
   value,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -16,14 +18,18 @@ const {
 const fieldId = htmlAttributes.id || `select-${crypto.randomUUID()}`;
 ---
 
-<div class:list={["select", className]}>
+<div
+  class:list={["select", className]}
+  data-rosey-ns={_uuid}
+>
   {
     label && (
       <label
         for={fieldId}
         class="label"
       >
-        {label}
+        {/* Key on the span, not the <label> — the required marker is a non-text child. */}
+        <span data-rosey="label">{label}</span>
         {required && (
           <span
             class="select-required"
@@ -48,6 +54,7 @@ const fieldId = htmlAttributes.id || `select-${crypto.randomUUID()}`;
         <option
           value=""
           disabled
+          data-rosey="placeholder"
         >
           {placeholder}
         </option>
@@ -55,11 +62,14 @@ const fieldId = htmlAttributes.id || `select-${crypto.randomUUID()}`;
     }
     {
       options.length > 0 ? (
+        // Options are bare {value, label} pairs with no _uuid, so the label itself is
+        // the key. Repeated labels then share one translation.
         options.map((option) => (
           <SelectOption
             value={option.value}
             label={option.label}
             selected={option.value === value}
+            data-rosey={option.label ? `option_${slugifyLabel(option.label)}` : undefined}
           />
         ))
       ) : (

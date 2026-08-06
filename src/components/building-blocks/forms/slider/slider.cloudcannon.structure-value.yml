@@ -3,6 +3,7 @@ icon: toggle_on
 description: Toggle switch form field for binary choices.
 value:
   _component: building-blocks/forms/slider
+  _uuid:
   label: My slider
   name: my_slider
   checked: false

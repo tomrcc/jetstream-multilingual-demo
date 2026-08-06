@@ -1,5 +1,6 @@
 ---
 import Icon from "@core-elements/icon/Icon.astro";
+import { resolveRosey } from "@component-utils/roseyKey";
 import MarkdownIt from "markdown-it";
 
 const {
@@ -10,6 +11,8 @@ const {
   class: className,
   editable = true,
   "data-prop": customDataProp = "text",
+  "data-rosey": roseyId,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -20,13 +23,18 @@ const textDataAttributes =
   editable && customDataProp
     ? {
         "data-editable": "text",
+        "data-type": "text",
         "data-prop": customDataProp,
       }
     : {};
+// Every item derives the same "text" key, so the per-item namespace is what keeps
+// them apart.
+const roseyAttributes = resolveRosey(roseyId, editable && customDataProp ? customDataProp : null);
 ---
 
 <li
   class:list={["item", showIcon && iconName && "list-item-has-icon", className]}
+  data-rosey-ns={_uuid}
   {...htmlAttributes}
 >
   {
@@ -40,7 +48,10 @@ const textDataAttributes =
       />
     )
   }
-  <p {...textDataAttributes}>
+  <p
+    {...textDataAttributes}
+    {...roseyAttributes}
+  >
     {text ? <Fragment set:html={md.renderInline(text)} /> : <slot />}
   </p>
 </li>

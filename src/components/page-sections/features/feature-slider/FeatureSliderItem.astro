@@ -15,12 +15,15 @@ const {
   imageAlt = "",
   minSplitWidth = 0,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
 ---
 
-<CarouselSlide {...htmlAttributes}>
+<CarouselSlide
+  data-rosey-ns={_uuid}
+  {...htmlAttributes}>
   <Card
     class:list={["feature-slider-item", className]}
     paddingHorizontal="xs"

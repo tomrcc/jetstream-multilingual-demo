@@ -1,4 +1,5 @@
 ---
+import { slugifyLabel } from "@component-utils/slugify";
 import Button from "@core-elements/button/Button.astro";
 import Counter from "@core-elements/counter/Counter.astro";
 import Heading from "@core-elements/heading/Heading.astro";
@@ -85,10 +86,14 @@ const team = await getCollection("team");
 const author = team.find((m: any) => m.data.uuid === post.data.author);
 ---
 
+<!-- No roseySeo: the head comes from post frontmatter, which stays in the default
+     language. hideLocaleSwitcher hides the connector's switcher here, because the post
+     body carries no Rosey keys and switching locale would offer nothing to translate. -->
 <Page
   title={post.data.title}
   description={post.data.description}
   image={post.data.image}
+  hideLocaleSwitcher
 >
   <CustomSection
     class:list={["hero-feature"]}
@@ -108,26 +113,37 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
       gap="lg"
     >
       <Fragment slot="first">
+        {/* Post frontmatter is not translated — it belongs to the post file, not to
+            Rosey — so these opt out of the derived key. */}
         <Heading
           level="h1"
           size="2xl"
           alignX="left"
           class="heading"
           data-prop="title"
+          data-rosey={false}
         >
           {post.data.title}
         </Heading>
-        <p class="breadcrumb">
+        {/* data-rosey-root escapes the per-post namespace, so "Blog" is one key across
+            every post rather than one each. The tag link below sets its own root. */}
+        <p
+          class="breadcrumb"
+          data-rosey-root="post"
+        >
           <a
             href="/blog/"
             class="blog-link"
+            data-rosey="breadcrumb_blog"
             >Blog</a
           > / <a
             href={`/blog/tag/${post.data.tag}`}
             class="tag"
+            data-rosey-root="tags"
             ><span
               data-editable="text"
               data-prop="tag"
+              data-rosey={slugifyLabel(post.data.tag ?? "")}
               >{post.data.tag}</span
             ></a
           >
@@ -138,6 +154,7 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
           alignX="left"
           class="description"
           data-prop="description"
+          data-rosey={false}
         >
           {post.data.description}
         </SimpleText>
@@ -175,16 +192,23 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
                 class="counter-container"
                 data-editable="array-item"
               >
+                {/* Counter values and their labels come from post frontmatter, which is
+                    not translated, so they opt out of the derived keys. */}
                 <editable-component
                   data-prop="counter"
                   data-component="building-blocks/core-elements/counter"
                 >
-                  <Counter {...counter.counter} />
+                  <Counter
+                    {...counter.counter}
+                    data-rosey-prefix={false}
+                    data-rosey-suffix={false}
+                  />
                 </editable-component>
                 <SimpleText
                   text={counter.subtext}
                   alignX="left"
                   data-prop={`subtext`}
+                  data-rosey={false}
                 />
               </div>
             ))}
@@ -273,6 +297,8 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
         }
 
         <div class="share-section">
+          {/* data-rosey-root escapes the per-post namespace so this is one key for every
+              post rather than one per post. */}
           <SimpleText
             size="md"
             class="share-section-text"
@@ -280,6 +306,8 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
             data-editable="source"
             data-path="/src/pages/blog/[...slug].astro"
             data-key="share-section-heading"
+            data-rosey-root="post"
+            data-rosey="share"
           >
             Share this article:
           </SimpleText>
@@ -316,6 +344,8 @@ const author = team.find((m: any) => m.data.uuid === post.data.author);
           data-editable="source"
           data-path="/src/pages/blog/[...slug].astro"
           data-key="sidebar-heading"
+          data-rosey-root="post"
+          data-rosey="latest_news"
           >Latest News</SimpleText
         >
         {

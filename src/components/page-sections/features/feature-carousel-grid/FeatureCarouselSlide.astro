@@ -8,13 +8,16 @@ const {
   colorScheme = "inherit",
   backgroundColor,
   class: className,
+  _uuid,
   _component,
   editable = false,
   ...htmlAttributes
 } = Astro.props;
 ---
 
-<CarouselSlide {...htmlAttributes}>
+<CarouselSlide
+  data-rosey-ns={_uuid}
+  {...htmlAttributes}>
   <BentoBoxGrid
     class:list={["feature-carousel-slide-grid", className]}
     gap="xs"
@@ -29,7 +32,8 @@ const {
             backgroundColor={card.style}
             border={false}
             data-editable="array-item"
-            data-id="building-blocks/wrappers/bento-box-grid/bento-box-grid-item"
+            data-component="page-sections/features/feature-carousel-grid/feature-carousel-card"
+            data-id={card._uuid ?? "page-sections/features/feature-carousel-grid/feature-carousel-card"}
           />
         ) : (
           <FeatureCarouselCard
@@ -37,7 +41,8 @@ const {
             backgroundColor="base"
             border={true}
             data-editable="array-item"
-            data-id="building-blocks/wrappers/bento-box-grid/bento-box-grid-item"
+            data-component="page-sections/features/feature-carousel-grid/feature-carousel-card"
+            data-id={card._uuid ?? "page-sections/features/feature-carousel-grid/feature-carousel-card"}
           />
         )
       )

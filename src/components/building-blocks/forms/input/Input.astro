@@ -7,6 +7,7 @@ const {
   required = false,
   value,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -14,14 +15,19 @@ const {
 const fieldId = htmlAttributes.id || `input-${crypto.randomUUID()}`;
 ---
 
-<div class:list={["input", className]}>
+<div
+  class:list={["input", className]}
+  data-rosey-ns={_uuid}
+>
   {
     label && (
       <label
         for={fieldId}
         class="label"
       >
-        {label}
+        {/* The key goes on this span, not the <label>: the required marker below is a
+            non-text child and would otherwise be captured and injected twice. */}
+        <span data-rosey="label">{label}</span>
         {required && (
           <span
             class="input-required"
@@ -42,6 +48,7 @@ const fieldId = htmlAttributes.id || `input-${crypto.randomUUID()}`;
     aria-required={required}
     value={value}
     class="field"
+    data-rosey-attrs-explicit={placeholder ? JSON.stringify({ placeholder: "placeholder" }) : undefined}
     {...htmlAttributes}
   />
 </div>

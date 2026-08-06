@@ -6,6 +6,7 @@ const {
   accept,
   multiple = false,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -13,14 +14,18 @@ const {
 const fieldId = htmlAttributes.id || `file-upload-${crypto.randomUUID()}`;
 ---
 
-<div class:list={["file-upload", className]}>
+<div
+  class:list={["file-upload", className]}
+  data-rosey-ns={_uuid}
+>
   {
     label && (
       <label
         for={fieldId}
         class="label"
       >
-        {label}
+        {/* Key on the span, not the <label> — the required marker is a non-text child. */}
+        <span data-rosey="label">{label}</span>
         {required && (
           <span
             class="file-upload-required"

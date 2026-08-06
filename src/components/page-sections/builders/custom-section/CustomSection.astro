@@ -22,10 +22,16 @@ const {
   contentClass = "",
   class: className,
   style: userStyle,
+  _uuid,
   _component,
   "data-children-prop": childrenDataProp,
+  "data-rosey-ns": roseyNs,
   ...htmlAttributes
 } = Astro.props;
+
+// A wrapping section passes its own namespace down; when CustomSection is used
+// directly as a page section it namespaces itself.
+const sectionRoseyNs = roseyNs ?? _uuid;
 
 const {
   source = "",
@@ -43,13 +49,19 @@ const hasContentSections = contentSections !== undefined;
 const effectiveChildrenProp = childrenDataProp ?? (editable ? "contentSections" : null);
 const arrayDataAttributes =
   effectiveChildrenProp && hasContentSections
-    ? { "data-editable": "array", "data-prop": effectiveChildrenProp }
+    ? {
+        "data-editable": "array",
+        "data-prop": effectiveChildrenProp,
+        "data-component-key": "_component",
+        "data-id-key": "_uuid",
+      }
     : {};
 ---
 
 <section
   class:list={["custom-section", className]}
   style={userStyle || undefined}
+  data-rosey-ns={sectionRoseyNs}
   {...htmlAttributes}
 >
   <div

@@ -37,7 +37,10 @@ const {
         />
       </div>
       <div class="content-container">
-        <Bar navData={links} />
+        <Bar
+          navData={links}
+          roseyNs="footer"
+        />
       </div>
     </div>
 
@@ -45,10 +48,15 @@ const {
 
     <div class="footer-content">
       <div class="content-container">
+        {/* data-prop was "", which is falsy — so this had no editable region and no
+            derived key. The year in the copyright will flag the translation stale each
+            January; splitting it out would avoid that. */}
         <Text
           class="footer-legal-text"
           text={footerText || ""}
-          data-prop=""
+          data-prop="footerText"
+          data-rosey-root="footer"
+          data-rosey="legal"
         />
       </div>
       <div class="content-container">

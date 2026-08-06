@@ -13,6 +13,7 @@ const {
   imageAlt = "",
   editable = false,
   class: className,
+  _uuid,
   _component,
   ...htmlAttributes
 } = Astro.props;
@@ -22,6 +23,7 @@ const cardClasses = ["team-item", className].filter(Boolean).join(" ");
 
 <GridItem>
   <Card
+    data-rosey-ns={_uuid}
     {...htmlAttributes}
     class:list={cardClasses || undefined}
     paddingHorizontal="lg"
@@ -38,6 +40,7 @@ const cardClasses = ["team-item", className].filter(Boolean).join(" ");
         alignX="start"
         style="margin-bottom: var(--spacing-xs); margin-top: 0;"
         data-prop={editable ? "name" : undefined}
+        data-rosey={false}
       >
         {name}
       </Heading>

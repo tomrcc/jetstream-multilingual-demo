@@ -16,6 +16,7 @@ const {
   columnSpan,
   rowSpan,
   class: className,
+  _uuid,
   _component,
   editable = false,
   ...htmlAttributes
@@ -33,6 +34,7 @@ const {
     rounded
     border={border}
     backgroundColor={backgroundColor}
+    data-rosey-ns={_uuid}
     {...htmlAttributes}
   >
     {
