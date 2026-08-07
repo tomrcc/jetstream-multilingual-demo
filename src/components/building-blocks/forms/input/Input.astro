@@ -17,12 +17,12 @@ const {
 const fieldId = id || `input-${crypto.randomUUID()}`;
 ---
 
-{/* htmlAttributes carries the caller's data-editable/data-component, which belong on
-    the root element: CloudCannon's re-render nests the component inside the region,
-    doubling every data-rosey-ns below it and breaking translation lookups. */}
+{/* htmlAttributes carries the caller's data-editable/data-component. CloudCannon's
+    re-render replaces this element's children with a fresh copy of the component, so
+    data-rosey-ns has to sit strictly inside it — on the root it would be re-emitted by
+    the copy, doubling the namespace on every key below. */}
 <div
   class:list={["input", className]}
-  data-rosey-ns={_uuid}
   {...htmlAttributes}
 >
   {
@@ -30,6 +30,7 @@ const fieldId = id || `input-${crypto.randomUUID()}`;
       <label
         for={fieldId}
         class="label"
+        data-rosey-ns={_uuid}
       >
         {/* The key goes on this span, not the <label>: the required marker below is a
             non-text child and would otherwise be captured and injected twice. */}
@@ -54,6 +55,7 @@ const fieldId = id || `input-${crypto.randomUUID()}`;
     aria-required={required}
     value={value}
     class="field"
+    data-rosey-ns={_uuid}
     data-rosey-attrs-explicit={placeholder ? JSON.stringify({ placeholder: "placeholder" }) : undefined}
   />
 </div>
