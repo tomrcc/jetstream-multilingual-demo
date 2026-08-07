@@ -7,17 +7,23 @@ const {
   min,
   max,
   class: className,
+  id,
   _uuid,
   _component,
+  editable = false,
   ...htmlAttributes
 } = Astro.props;
 
-const fieldId = htmlAttributes.id || `date-${crypto.randomUUID()}`;
+const fieldId = id || `date-${crypto.randomUUID()}`;
 ---
 
+{/* htmlAttributes carries the caller's data-editable/data-component, which belong on
+    the root element: CloudCannon's re-render nests the component inside the region,
+    doubling every data-rosey-ns below it and breaking translation lookups. */}
 <div
   class:list={["date", className]}
   data-rosey-ns={_uuid}
+  {...htmlAttributes}
 >
   {
     label && (
@@ -48,7 +54,6 @@ const fieldId = htmlAttributes.id || `date-${crypto.randomUUID()}`;
     min={min}
     max={max}
     class="field"
-    {...htmlAttributes}
   />
 </div>
 

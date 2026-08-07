@@ -6,17 +6,23 @@ const {
   required = false,
   value,
   class: className,
+  id,
   _uuid,
   _component,
+  editable = false,
   ...htmlAttributes
 } = Astro.props;
 
-const fieldId = htmlAttributes.id || `textarea-${crypto.randomUUID()}`;
+const fieldId = id || `textarea-${crypto.randomUUID()}`;
 ---
 
+{/* htmlAttributes carries the caller's data-editable/data-component, which belong on
+    the root element: CloudCannon's re-render nests the component inside the region,
+    doubling every data-rosey-ns below it and breaking translation lookups. */}
 <div
   class:list={["textarea", className]}
   data-rosey-ns={_uuid}
+  {...htmlAttributes}
 >
   {
     label && (
@@ -45,7 +51,6 @@ const fieldId = htmlAttributes.id || `textarea-${crypto.randomUUID()}`;
     aria-required={required}
     class="field"
     data-rosey-attrs-explicit={placeholder ? JSON.stringify({ placeholder: "placeholder" }) : undefined}
-    {...htmlAttributes}
     >{value}</textarea
   >
 </div>

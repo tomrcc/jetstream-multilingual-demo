@@ -6,17 +6,23 @@ const {
   required = false,
   value = "on",
   class: className,
+  id,
   _uuid,
   _component,
+  editable = false,
   ...htmlAttributes
 } = Astro.props;
 
-const fieldId = htmlAttributes.id || `slider-${crypto.randomUUID()}`;
+const fieldId = id || `slider-${crypto.randomUUID()}`;
 ---
 
+{/* htmlAttributes carries the caller's data-editable/data-component, which belong on
+    the root element: CloudCannon's re-render nests the component inside the region,
+    doubling every data-rosey-ns below it and breaking translation lookups. */}
 <div
   class:list={["slider", className]}
   data-rosey-ns={_uuid}
+  {...htmlAttributes}
 >
   <label
     class="slider-container"
@@ -32,7 +38,6 @@ const fieldId = htmlAttributes.id || `slider-${crypto.randomUUID()}`;
         aria-required={required}
         value={value}
         class="slider-input"
-        {...htmlAttributes}
       />
       <span class="slider-track"></span>
     </span>
